@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="421.0" prefWidth="759.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OgrenciYoneticiGuncellemeController">
+   <children>
+      <Label layoutX="26.0" layoutY="62.0" prefHeight="18.0" prefWidth="170.0" text="Kullanıcı Adı:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="100.0" prefHeight="28.0" prefWidth="46.0" text="Şifre:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="kulad_txt" layoutX="145.0" layoutY="62.0" prefHeight="28.0" prefWidth="198.0" />
+      <PasswordField fx:id="sifre_txt" layoutX="144.0" layoutY="100.0" prefHeight="28.0" prefWidth="198.0" />
+      <Label fx:id="lbl_kontrol" layoutX="194.0" layoutY="280.0" text="................" />
+      <Button fx:id="btn_guncele" layoutX="12.0" layoutY="211.0" mnemonicParsing="false" onAction="#btn_guncele_click" prefHeight="18.0" prefWidth="362.0" text="Öğrenciyi/Yöneticiyi Güncelle">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Button>
+      <Label layoutX="91.0" layoutY="146.0" text="Blok:">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="21.0" text="Bilgi: Öğrenciler sadece 2. ve 3. blokta kalabilir. Yöneticiler 1. bloktan başka yerde kalamaz.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="blok_txt" layoutX="144.0" layoutY="147.0" prefHeight="26.0" prefWidth="198.0" />
+      <Label fx:id="lbl_id" layoutX="375.0" layoutY="81.0" text="Label" visible="false" />
+      <TableView fx:id="tableview_kullanıcı" layoutX="403.0" layoutY="52.0" onMouseClicked="#tableview_kullanıcı_click" prefHeight="355.0" prefWidth="327.0">
+        <columns>
+          <TableColumn fx:id="table_kID" prefWidth="75.0" text="Kullanıcı ID" visible="false" />
+          <TableColumn fx:id="table_kulad" prefWidth="102.39996337890625" text="Kullanıcı Adı" />
+            <TableColumn fx:id="table_sifre" prefWidth="75.0" text="Şifre" />
+            <TableColumn fx:id="table_yetki" prefWidth="75.0" text="Yetki" />
+            <TableColumn fx:id="table_blok" prefWidth="75.0" text="Blok" />
+            <TableColumn fx:id="table_cinsiyet" prefWidth="75.0" text="Cinsiyet" visible="false" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

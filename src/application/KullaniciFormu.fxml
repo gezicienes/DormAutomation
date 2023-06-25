@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="487.0" prefWidth="733.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.kullaniciController">
+   <children>
+      <Button fx:id="btn_sifre_guncelle" contentDisplay="TOP" layoutX="54.0" layoutY="50.0" mnemonicParsing="false" onAction="#btn_sifre_guncelle_click" prefHeight="166.0" prefWidth="156.0" text="Şifreni Değiştir">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="105.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/860597-200.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_arıza" contentDisplay="TOP" layoutX="496.0" layoutY="50.0" mnemonicParsing="false" onAction="#btn_arıza_click" prefHeight="166.0" prefWidth="156.0" text="Arıza Bildir">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="91.0" fitWidth="90.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/buyuk_12241628507cca250.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_izin" contentDisplay="TOP" layoutX="280.0" layoutY="50.0" mnemonicParsing="false" onAction="#btn_izin_click" prefHeight="166.0" prefWidth="156.0" text="Yurttan İzin Al">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="91.0" fitWidth="90.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/üyelik.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="32.0" layoutY="244.0" text="Herhangi bir acil durumda, GSB ile iletişime geçmek için;">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="47.0" layoutX="32.0" layoutY="292.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Masaüstü/2991158.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="301.0" text="444 0 472 numaralı telefon hattından 7/24 bize ulaşabilirsiniz.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="45.0" fitWidth="54.0" layoutX="32.0" layoutY="350.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Masaüstü/Logo_of_Twitter.svg.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="85.0" layoutY="358.0" text="\@KYK_DESTEK sayfasından mesaj atabilirsiniz.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="55.0" fitWidth="76.0" layoutX="32.0" layoutY="404.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../OneDrive/Masaüstü/26a0.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="87.0" layoutY="405.0" prefHeight="55.0" prefWidth="655.0" text="Eğer yurtta iseniz, yurdunuzda her gece/gündüz 1 nöbetçi memur bulunmaktadır. &#10;Kendisiyle iletişime geçmenizi öneririz.">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_cikis" layoutX="579.0" layoutY="445.0" mnemonicParsing="false" onAction="#bn_cikis_click" prefHeight="26.0" prefWidth="138.0" text="Çıkış Yap" />
+   </children>
+</AnchorPane>

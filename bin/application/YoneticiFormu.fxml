@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="538.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.yoneticiController">
+   <children>
+      <Button fx:id="btn_ogrenci_ekle" contentDisplay="TOP" layoutX="82.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_ogrenci_ekle_click" prefHeight="166.0" prefWidth="156.0" text="Öğrenci Ekle">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="92.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/add-user-256x256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_ogrenci_sil" contentDisplay="TOP" layoutX="310.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_ogrenci_sil_click" prefHeight="166.0" prefWidth="156.0" text="Öğrenci/Yönetici Sil">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="102.0" fitWidth="101.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/remove-user-256x256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_ogrenci_guncelle" contentDisplay="TOP" layoutX="522.0" layoutY="14.0" mnemonicParsing="false" onAction="#btn_ogrenci_guncelle_click" prefHeight="166.0" prefWidth="188.0" text="Öğrenci/Yönetici Bilgilerini &#10;                Güncelle">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="105.0" fitWidth="105.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/860597-200.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_İstatistik" contentDisplay="TOP" layoutX="82.0" layoutY="193.0" mnemonicParsing="false" onAction="#btn_İstatistik_click" prefHeight="166.0" prefWidth="156.0" text="Öğrenci İstatistikleri">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="91.0" fitWidth="90.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/5276199.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_yonetici_ekle" contentDisplay="TOP" layoutX="310.0" layoutY="193.0" mnemonicParsing="false" onAction="#btn_yonetici_ekle_click" prefHeight="166.0" prefWidth="156.0" text="Yönetici Ekle">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="92.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/add-user-256x256.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_bildirilen_arıza" contentDisplay="TOP" layoutX="522.0" layoutY="193.0" mnemonicParsing="false" onAction="#btn_bildirilen_arıza_click" prefHeight="166.0" prefWidth="188.0" text="Bildirilen Arızalar">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="98.0" fitWidth="114.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Masaüstü/26a0.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btn_cikis" layoutX="679.0" layoutY="484.0" mnemonicParsing="false" onAction="#btn_cikis_click" prefHeight="26.0" prefWidth="106.0" text="Çıkış Yap" />
+      <Label layoutX="10.0" layoutY="383.0" prefHeight="94.0" prefWidth="818.0" text="Otomasyonun Yönetici kısmına hoşgeldiniz sayın Yönetici. &#10;Öğrencilerimizin güvenliği, sağlığı 1. önceliğimizdir.&#10;Gereken arıza bildirimlerini gerekli merciilere yaptıktan sonra silmeyi unutmayınız.">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

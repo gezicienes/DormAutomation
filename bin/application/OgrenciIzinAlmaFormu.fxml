@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="279.0" prefWidth="503.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.OgrenciIzinAlmaController">
+   <children>
+      <Label layoutX="180.0" layoutY="93.0" text="Kullanıcı Adı:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_kulad" layoutX="287.0" layoutY="93.0" prefHeight="26.0" prefWidth="167.0" />
+      <TextField fx:id="txt_izingun" layoutX="287.0" layoutY="122.0" prefHeight="26.0" prefWidth="167.0" promptText="Sadece gün sayısını yazınız." />
+      <Label layoutX="35.0" layoutY="122.0" text="Kaç gün izin almak istiyorsunuz?:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_kaydet" layoutX="79.0" layoutY="181.0" mnemonicParsing="false" onAction="#btn_kaydet_click" prefHeight="46.0" prefWidth="352.0" text="Kaydet">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="lbl_kontrol" layoutX="230.0" layoutY="240.0" text=".........." />
+   </children>
+</AnchorPane>
